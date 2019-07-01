@@ -1,0 +1,55 @@
+{
+  "name": "form-master",
+  "version": "0.0.1",
+  "description": "render form UI according to config with antd form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm i antd --no-save",
+    "lint": "./node_modules/.bin/standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electerm/form-master.git"
+  },
+  "keywords": [
+    "form",
+    "config",
+    "form",
+    "master",
+    "antd"
+  ],
+  "author": "ZHAO Xudong <zxdong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/electerm/form-master/issues"
+  },
+  "homepage": "https://github.com/electerm/form-master#readme",
+  "peerDependencies": {
+    "antd": "^3.19.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "json-deep-copy": "^1.0.2"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/app/assets/"
+    ],
+    "globals": [
+      "describe",
+      "beforeEach",
+      "afterEach",
+      "it",
+      "log",
+      "MouseEvent",
+      "WebSocket",
+      "FileReader",
+      "CustomEvent"
+    ]
+  }
+}
