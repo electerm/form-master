@@ -7,12 +7,12 @@ export default class FormMaster extends Component {
     this.state = copy(props.initState)
   }
 
+  stringRender = (config, i) => {
+    return i
+  }
+
   renderConfig = (config, i) => {
-    return (
-      <div className='fm-config'>
-        {config.name}
-      </div>
-    )
+    return this[config.type + 'Render'](config, i)
   }
 
   render () {
